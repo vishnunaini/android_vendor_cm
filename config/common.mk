@@ -115,8 +115,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libemoji \
     LiveWallpapersPicker \
-    PhotoTable \
-    Terminal
+    PhotoTable
 
 # Include explicitly to work around GMS issues
 PRODUCT_PACKAGES += \
@@ -126,7 +125,6 @@ PRODUCT_PACKAGES += \
 # Custom CM packages
 PRODUCT_PACKAGES += \
     AudioFX \
-    CMFileManager \
     CMSettingsProvider \
     CMUpdater \
     CMWallpapers \
@@ -135,7 +133,6 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     LiveLockScreenService \
     LockClock \
-    Screencast \
     SoundRecorder \
     Trebuchet \
     WallpaperPicker \
@@ -145,8 +142,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Exchange2
 
-# Extra tools in CM
 ifneq ($(DISABLE_EXTRA_TOOLS),true)
+PRODUCT_PACKAGES += \
+    Screencast \
+    CMFileManager \
+    Terminal
+
+# Extra tools in CM
 PRODUCT_PACKAGES += \
     7z \
     bash \
@@ -171,8 +173,10 @@ PRODUCT_PACKAGES += \
     unzip \
     vim \
     wget \
-    zip
+    zip \
+    rsync
 endif
+
 # Custom off-mode charger
 ifneq ($(WITH_CM_CHARGER),false)
 PRODUCT_PACKAGES += \
@@ -204,11 +208,6 @@ PRODUCT_PACKAGES += \
     start-ssh
 endif
 
-# rsync
-ifneq ($(DISABLE_RSYNC),true)
-PRODUCT_PACKAGES += \
-    rsync
-endif
 
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
