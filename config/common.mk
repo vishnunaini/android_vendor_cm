@@ -126,7 +126,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AudioFX \
     CMSettingsProvider \
-    CMUpdater \
     CMWallpapers \
     CyanogenSetupWizard \
     Eleven \
@@ -141,6 +140,10 @@ PRODUCT_PACKAGES += \
 # Exchange support
 PRODUCT_PACKAGES += \
     Exchange2
+
+ifneq ($(DISABLE_CM_UPDATER),true)
+PRODUCT_PACKAGES += CMUpdater
+endif
 
 ifneq ($(DISABLE_EXTRA_TOOLS),true)
 PRODUCT_PACKAGES += \
