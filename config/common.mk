@@ -149,8 +149,10 @@ ifneq ($(DISABLE_EXTRA_TOOLS),true)
 PRODUCT_PACKAGES += \
     Screencast \
     CMFileManager \
-    Terminal
-
+    Terminal \
+    gdbserver \
+    rsync
+endif
 # Extra tools in CM
 PRODUCT_PACKAGES += \
     7z \
@@ -158,7 +160,6 @@ PRODUCT_PACKAGES += \
     bzip2 \
     curl \
     fsck.ntfs \
-    gdbserver \
     htop \
     lib7z \
     libsepol \
@@ -176,9 +177,7 @@ PRODUCT_PACKAGES += \
     unzip \
     vim \
     wget \
-    zip \
-    rsync
-endif
+    zip
 
 # Custom off-mode charger
 ifneq ($(WITH_CM_CHARGER),false)
