@@ -318,6 +318,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/cm/build/target/product/security/lineage
+PRODUCT_EXTRA_RECOVERY_KEYS += \
+    vnai-pubcert/releasekey
 
 -include vendor/cm-priv/keys/keys.mk
 
