@@ -147,7 +147,6 @@ PRODUCT_PACKAGES += \
     mke2fs \
     mkfs.ntfs \
     mount.ntfs \
-    oprofiled \
     pigz \
     powertop \
     sqlite3 \
