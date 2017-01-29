@@ -179,16 +179,6 @@ PRODUCT_PACKAGES += \
     mkfs.exfat
 endif
 
-# Openssh
-PRODUCT_PACKAGES += \
-    scp \
-    sftp \
-    ssh \
-    sshd \
-    sshd_config \
-    ssh-keygen \
-    start-ssh
-
 # rsync
 PRODUCT_PACKAGES += \
     rsync
