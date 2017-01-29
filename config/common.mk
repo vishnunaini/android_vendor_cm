@@ -177,10 +177,6 @@ PRODUCT_PACKAGES += \
     mkfs.exfat
 endif
 
-# rsync
-PRODUCT_PACKAGES += \
-    rsync
-
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
     libffmpeg_extractor \
