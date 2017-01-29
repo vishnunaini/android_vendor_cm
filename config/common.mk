@@ -140,7 +140,6 @@ PRODUCT_PACKAGES += \
     bzip2 \
     curl \
     fsck.ntfs \
-    gdbserver \
     htop \
     lib7z \
     libsepol \
@@ -152,7 +151,6 @@ PRODUCT_PACKAGES += \
     pigz \
     powertop \
     sqlite3 \
-    strace \
     tune2fs \
     unrar \
     unzip \
