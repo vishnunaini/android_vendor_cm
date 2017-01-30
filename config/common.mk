@@ -140,7 +140,6 @@ PRODUCT_PACKAGES += \
     bzip2 \
     curl \
     fsck.ntfs \
-    htop \
     lib7z \
     libsepol \
     micro_bench \
@@ -148,7 +147,6 @@ PRODUCT_PACKAGES += \
     mkfs.ntfs \
     mount.ntfs \
     pigz \
-    powertop \
     sqlite3 \
     tune2fs \
     unrar \
